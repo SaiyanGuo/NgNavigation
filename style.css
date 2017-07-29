@@ -1,0 +1,135 @@
+.nav-container {
+  width: 250px;
+  position: fixed;
+  top: 100px;
+  right: 100px;
+  z-index: 9999;
+}
+.nav-container .nav-animate {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.nav-container .nav-title {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  background: #e83232;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  cursor: pointer;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.4);
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.nav-container .nav-title span {
+  content: '';
+  top: 29px;
+  left: 20px;
+  width: 20px;
+  height: 2px;
+  background-color: #ffffff;
+  position: absolute;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.nav-container .nav-title .btn-icon-1 {
+  -webkit-transform: translateY(6px);
+  -moz-transform: translateY(6px);
+  -ms-transform: translateY(6px);
+  -o-transform: translateY(6px);
+  transform: translateY(6px);
+}
+.nav-container .nav-title .btn-icon-3 {
+  -webkit-transform: translateY(-6px);
+  -moz-transform: translateY(-6px);
+  -ms-transform: translateY(-6px);
+  -o-transform: translateY(-6px);
+  transform: translateY(-6px);
+}
+.nav-container .nav-title .icon-active-1 {
+  transform: rotate(45deg);
+}
+.nav-container .nav-title .icon-active-2 {
+  display: none;
+}
+.nav-container .nav-title .icon-active-3 {
+  transform: rotate(-45deg);
+}
+.nav-container .nav-active {
+  height: calc(100%  + 60px);
+}
+.nav-container .nav-list {
+  color: #ffffff;
+  list-style-type: none;
+  display: block;
+  top: 60px;
+  padding: 0;
+  z-index: 2;
+  position: relative;
+  visibility: hidden;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.nav-container .nav-list .nav-btn-link {
+  height: 42px;
+  font-size: 16px;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.nav-container .nav-list .nav-btn-link .link {
+  color: rgba(255, 255, 255, 0);
+  position: absolute;
+  right: 120px;
+}
+.nav-container .nav-list .nav-btn-link .link-active {
+  color: #ffffff;
+  right: 80px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.nav-container .nav-list .nav-btn-link .link-icon {
+  position: absolute;
+  right: 0;
+  padding: 2px 20px;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0);
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.nav-container .nav-list .nav-btn-link .link-icon-active {
+  color: #ffffff;
+}
+.nav-container .nav-list .nav-btn-link .link-active:hover {
+  color: #ffc800;
+}
+.nav-container .nav-list .nav-btn-link .link-icon-active:hover {
+  color: #ffc800;
+}
+.nav-container .nav-list-open {
+  visibility: visible;
+}
+.nav-container .nav-overlay {
+  position: fixed;
+  z-index: -1;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
